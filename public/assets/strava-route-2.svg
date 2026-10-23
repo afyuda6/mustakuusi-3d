@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Light Strava route plaque">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2efe9"/>
+      <stop offset="1" stop-color="#d9d4cb"/>
+    </linearGradient>
+    <filter id="sh2" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#000000" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg2)"/>
+  <g filter="url(#sh2)" transform="rotate(4 600 450)">
+    <rect x="238" y="170" width="724" height="584" rx="52" fill="#f7f3ea"/>
+    <rect x="238" y="170" width="724" height="584" rx="52" fill="none" stroke="#cdc4b4" stroke-width="3"/>
+  </g>
+
+  <g transform="rotate(4 600 450)">
+    <text x="294" y="250" fill="#2c2a26" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="4">STRAVA ROUTE</text>
+    <text x="294" y="288" fill="#8a8478" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="3">CUSTOM PLAQUE</text>
+
+    <rect x="770" y="222" width="146" height="46" rx="23" fill="#fc4c02"/>
+    <text x="843" y="252" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="middle" letter-spacing="2">RUN</text>
+
+    <path d="M 318 566 C 378 470 428 590 508 500 S 628 390 688 470 S 808 560 878 430"
+          fill="none" stroke="#fc4c02" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="318" cy="566" r="15" fill="#2c2a26" stroke="#fc4c02" stroke-width="7"/>
+    <circle cx="878" cy="430" r="15" fill="#fc4c02" stroke="#ffffff" stroke-width="7"/>
+
+    <text x="294" y="666" fill="#2c2a26" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700">MONAS - SENAYAN</text>
+    <text x="294" y="708" fill="#8a8478" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="1">10.2 KM - 22 OKTOBER 2026 - 06:15</text>
+  </g>
+</svg>

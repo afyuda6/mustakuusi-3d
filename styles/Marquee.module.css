@@ -1,0 +1,29 @@
+@import "../vars.css";
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    color: #FFF;
+}
+
+.text {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: marquee 18s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.text::selection {
+    background: white;
+    color: black;
+}

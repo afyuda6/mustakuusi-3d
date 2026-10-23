@@ -1,0 +1,12 @@
+[
+  {
+    "value": "keychain",
+    "label": { "id": "Gantungan Kunci", "en": "Keychain" },
+    "children": []
+  },
+  {
+    "value": "strava",
+    "label": { "id": "Strava Route", "en": "Strava Route" },
+    "children": []
+  }
+]

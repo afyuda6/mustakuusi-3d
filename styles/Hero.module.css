@@ -1,0 +1,178 @@
+@import "../vars.css";
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 0;
+    margin: 48px 10%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 540px;
+    color: var(--color-text);
+    z-index: 1;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 12px;
+    font-family: var(--font-i), monospace;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 120%);
+}
+
+.description {
+    font-size: 18px;
+    font-family: var(--font-i), monospace;
+    margin-bottom: 24px;
+    padding-right: 24px;
+}
+
+.stats {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 18px;
+}
+
+.statItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.statValue {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--color-primary);
+    line-height: 1;
+}
+
+.statLabel {
+    font-size: 13px;
+    color: var(--color-text);
+    opacity: 0.6;
+    margin-top: 2px;
+}
+
+.productBtn {
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    color: var(--color-bg);
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 18px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.24);
+    opacity: 0.6;
+}
+
+.homeButtons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.badge {
+    height: 42px;
+    vertical-align: middle;
+}
+
+.homeBadge {
+    height: 42px;
+    display: block;
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.homeBadge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.24);
+    opacity: 0.6;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.heroImg {
+    width: 30%;
+    z-index: 1;
+
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 18px);
+    }
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+.fadeUp {
+    opacity: 0;
+    transform: translateY(48px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.fadeUp.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+        flex-direction: column-reverse;
+        margin: 0 10%;
+    }
+
+    .content {
+        align-items: center;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .stats {
+        justify-content: center;
+    }
+
+    .statItem {
+        align-items: center;
+        padding: 8px 16px;
+    }
+
+    .heroImg {
+        z-index: 0;
+        width: 240px;
+        margin: 24px 10%;
+    }
+}

@@ -1,0 +1,29 @@
+@import "../vars.css";
+
+.container {
+    color: var(--color-text);
+    margin: 30px 10%;
+    padding: 30px 0;
+}
+
+.screenshotsLabel {
+    font-size: clamp(1.2rem, 1rem + 0.8vw, 1.8rem);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    line-height: 1.1;
+    display: block;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.screenshots {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+}

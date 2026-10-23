@@ -1,0 +1,22 @@
+@import "../vars.css";
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.text::selection {
+    background: white;
+    color: black;
+}

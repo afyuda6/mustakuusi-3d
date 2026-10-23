@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Strava route plaque on a desk">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9eef2"/>
+      <stop offset="1" stop-color="#cdd5dc"/>
+    </linearGradient>
+    <filter id="sh3" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#000000" flood-opacity="0.26"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg3)"/>
+  <circle cx="600" cy="450" r="360" fill="#ffffff" opacity="0.35"/>
+  <g filter="url(#sh3)" transform="rotate(2 600 450)">
+    <rect x="238" y="170" width="724" height="584" rx="52" fill="#20303c"/>
+    <rect x="238" y="170" width="724" height="584" rx="52" fill="none" stroke="#3a505f" stroke-width="3"/>
+  </g>
+
+  <g transform="rotate(2 600 450)">
+    <text x="294" y="250" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="4">STRAVA ROUTE</text>
+    <text x="294" y="288" fill="#93a8b6" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="3">CUSTOM PLAQUE</text>
+
+    <rect x="770" y="222" width="146" height="46" rx="23" fill="#fc4c02"/>
+    <text x="843" y="252" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="middle" letter-spacing="2">RIDE</text>
+
+    <path d="M 318 600 C 378 520 428 610 508 520 S 628 420 688 490 S 808 580 878 460"
+          fill="none" stroke="#fc4c02" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="318" cy="600" r="15" fill="#ffffff" stroke="#fc4c02" stroke-width="7"/>
+    <circle cx="878" cy="460" r="15" fill="#fc4c02" stroke="#ffffff" stroke-width="7"/>
+
+    <text x="294" y="690" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700">UI - DEPOK</text>
+    <text x="294" y="732" fill="#93a8b6" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="1">32.7 KM - 23 OKTOBER 2026 - 04:45</text>
+  </g>
+</svg>

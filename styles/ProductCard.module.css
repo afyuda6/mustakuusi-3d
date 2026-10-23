@@ -1,0 +1,186 @@
+@import "../vars.css";
+
+.container {
+    position: relative;
+    z-index: 0;
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    background: var(--color-light);
+    border: 3px solid var(--color-secondary);
+    padding: 18px 24px;
+    max-width: 345px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 0;
+    min-width: 0;
+}
+
+.card:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.cardMatched {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-primary) 22%, transparent);
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+}
+
+.title {
+    font-size: 21px;
+    font-weight: 700;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.title a {
+    color: var(--color-text);
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+}
+
+.title a:hover {
+    opacity: 0.6;
+}
+
+.description {
+    margin-top: 6px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.roleBadge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+
+    font-size: 15px;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 6px;
+
+    background: var(--color-primary);
+    color: white;
+
+    z-index: 2;
+
+    background: color-mix(in srgb, var(--color-primary) 81%, transparent);
+    backdrop-filter: blur(6px);
+}
+
+.categories {
+    width: 100%;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+}
+
+.category {
+    font-size: 12px;
+    font-weight: 300;
+    border-radius: 6px;
+    background: var(--color-bg);
+    border: 1px solid var(--color-secondary);
+    padding: 3px 12px;
+}
+
+.links {
+    width: 100%;
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link {
+    text-decoration: none;
+    padding: 3px 15px;
+}
+
+.badge {
+    height: 42px;
+    vertical-align: middle;
+    transition: opacity 0.3s ease;
+}
+
+.links a:hover .badge {
+    opacity: 0.6;
+}
+
+.ctaBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    padding: 0 18px;
+    border-radius: 6px;
+    background: var(--color-primary);
+    color: var(--color-bg);
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ctaBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.24);
+    opacity: 0.6;
+}
+
+.fadeUp {
+    opacity: 0;
+    transform: translateY(48px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.fadeUp.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.downloadButton {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.downloadButton:focus {
+    outline: none;
+}
+
+.downloadButton img {
+    display: block;
+}
+
+.categoryClickable {
+    cursor: pointer;
+    transition: opacity 0.15s ease;
+}
+
+.categoryClickable:hover {
+    opacity: 0.6;
+}
+
+.categoryActive {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+}

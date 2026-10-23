@@ -1,0 +1,41 @@
+@import "../vars.css";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    background: var(--color-light);
+    border: 1px solid var(--color-secondary);
+    padding: 18px 24px;
+    max-width: 345px;
+    overflow: hidden;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+    display: block;
+    width: calc(100% - 24px);
+    height: auto;
+    margin: 12px;
+    transition: transform 0.3s ease;
+}
+
+.container:hover .image {
+    transform: scale(1.05);
+}
+
+.fadeUp {
+    opacity: 0;
+    transform: translateY(48px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.fadeUp.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

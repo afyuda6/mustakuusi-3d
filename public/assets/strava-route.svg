@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-label="Strava route plaque">
+  <defs>
+    <linearGradient id="table" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6f5f2"/>
+      <stop offset="1" stop-color="#e7e4de"/>
+    </linearGradient>
+    <linearGradient id="plaque" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#24292f"/>
+      <stop offset="1" stop-color="#121519"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000000" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#table)"/>
+  <circle cx="512" cy="520" r="380" fill="#ffffff" opacity="0.35"/>
+
+  <g filter="url(#shadow)">
+    <rect x="150" y="220" width="724" height="584" rx="52" fill="url(#plaque)"/>
+    <rect x="150" y="220" width="724" height="584" rx="52" fill="none" stroke="#3a4149" stroke-width="3"/>
+  </g>
+
+  <text x="206" y="300" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="4">STRAVA ROUTE</text>
+  <text x="206" y="338" fill="#9aa3ad" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="3">CUSTOM PLAQUE</text>
+
+  <rect x="682" y="272" width="146" height="46" rx="23" fill="#fc4c02"/>
+  <text x="755" y="302" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="middle" letter-spacing="2">RIDE</text>
+
+  <path d="M 230 616 C 270 500 360 640 420 520 S 560 400 610 500 S 720 610 790 470"
+        fill="none" stroke="#fc4c02" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="230" cy="616" r="15" fill="#ffffff" stroke="#fc4c02" stroke-width="7"/>
+  <circle cx="790" cy="470" r="15" fill="#fc4c02" stroke="#ffffff" stroke-width="7"/>
+
+  <text x="206" y="716" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700">SENAYAN LOOP</text>
+  <text x="206" y="758" fill="#9aa3ad" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="1">18.4 KM - 21 OKTOBER 2026 - 05:30</text>
+</svg>

@@ -1,0 +1,90 @@
+@import "../vars.css";
+
+.container {
+    position: relative;
+    z-index: 0;
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background: var(--color-light);
+    border: 3px solid var(--color-secondary);
+    padding: 12px;
+    width: 100%;
+    height: 150px;
+    transition: transform 0.3s ease;
+    cursor: default;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.card:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.imagecon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 90px;
+    margin-bottom: 6px;
+    position: relative;
+}
+
+.image {
+    width: auto;
+    height: auto;
+    display: block;
+    transform: scale(0.42);
+    transform-origin: center bottom;
+    animation: breathing 3s ease-in-out infinite;
+    position: relative;
+    z-index: 0;
+}
+
+@keyframes breathing {
+    0%, 100% {
+        transform: scale(0.45, 0.42);
+    }
+    50% {
+        transform: scale(0.42, 0.45);
+    }
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    text-align: center;
+    color: var(--color-text);
+    transition: opacity 0.3s ease;
+}
+
+.title:hover {
+    opacity: 0.6;
+}
+
+.fadeUp {
+    opacity: 0;
+    transform: translateY(48px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.fadeUp.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.roleText {
+    font-size: 12px;
+    color: var(--color-primary);
+    text-align: center;
+}

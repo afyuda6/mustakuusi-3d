@@ -1,0 +1,143 @@
+@import "../vars.css";
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2.5rem 1rem;
+}
+
+.contactLabel {
+    font-size: clamp(1.2rem, 1rem + 0.8vw, 1.8rem);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    line-height: 1.1;
+    display: block;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.header {
+    margin-bottom: 2rem;
+}
+
+.eyebrow {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #999;
+    margin: 0 0 0.4rem;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0 0 0.5rem;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.grid {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.grid li {
+    flex: 0 1 90px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+
+    padding: 0.9rem 0.5rem;
+
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    text-decoration: underline;
+
+    color: var(--color-text);
+
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    border-color: rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, 0.36);
+    transform: translateY(-3px);
+}
+
+.iconWrap {
+    width: 42px;
+    height: 42px;
+    border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f2f2f2;
+}
+
+.label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer {
+    border-top: 1px solid #eee;
+    padding-top: 1.25rem;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    font-size: 12px;
+    color: #999;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 2rem 0.8rem;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .card {
+        padding: 0.8rem 0.4rem;
+        gap: 6px;
+    }
+
+    .iconWrap {
+        width: 36px;
+        height: 36px;
+    }
+
+    .label {
+        font-size: 15px;
+    }
+}

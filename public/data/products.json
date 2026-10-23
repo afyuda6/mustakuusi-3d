@@ -1,0 +1,51 @@
+[
+  {
+    "id": "gantungan-kunci-custom-nama",
+    "title": "Gantungan Kunci Custom Nama",
+    "iconSrc": "keychain-custom-name.png",
+    "imageSrc": "keychain-custom-name.png",
+    "date": "2026-10-20T10:00:00+07:00",
+    "description": "Gantungan kunci 3D printing dengan tulisan nama sesuai pesanan. Kamu bisa menyesuaikan teks, font, dan warna filament supaya hasilnya benar-benar milikmu.",
+    "categories": [
+      "Gantungan Kunci"
+    ],
+    "customizer": {
+      "type": "keychain"
+    },
+    "detail": "/gantungan-kunci-custom-nama",
+    "orderLink": "https://wa.me/6285801582436?text=Halo%20mustakuusi3D%2C%20saya%20ingin%20pesan%20Gantungan%20Kunci%20Custom%20Nama",
+    "ctaLabel": "Pesan via WhatsApp",
+    "longDescription": "Gantungan Kunci Custom Nama dibuat dengan teknologi 3D printing menggunakan filament berkualitas sehingga ringan, awet, dan nyaman dibawa setiap hari. Cukup tulis nama atau kata yang ingin kamu tampilkan, lalu pilih font dan warna filament favoritmu; tim kami akan mencetaknya sesuai pilihanmu. Cocok sebagai hadiah ulang tahun, kenang-kenangan, atau aksesori personal untuk tas dan kunci kesayanganmu. Setiap produk dicetak per pesanan, diperiksa satu per satu, dan dikemas aman sebelum dikirim.",
+    "screenshots": [
+      "keychain-custom-name-1.png",
+      "keychain-custom-name-2.png",
+      "keychain-custom-name-3.png"
+    ]
+  },
+  {
+    "id": "strava-route-custom",
+    "title": "Pajangan Rute Strava",
+    "iconSrc": "strava/run.svg",
+    "imageSrc": "strava/run.svg",
+    "date": "2026-10-21T10:00:00+07:00",
+    "description": "Pajangan rute Strava 3D printing dengan detail tanggal, waktu, dan nama rute aktivitasmu. Abadikan setiap perjalanan dalam bentuk plakat yang bisa dipajang di meja atau dinding.",
+    "categories": [
+      "Strava Route"
+    ],
+    "customizer": {
+      "type": "strava"
+    },
+    "detail": "/strava-route-custom",
+    "orderLink": "https://wa.me/6285801582436?text=Halo%20mustakuusi3D%2C%20saya%20ingin%20pesan%20Pajangan%20Rute%20Strava",
+    "ctaLabel": "Pesan via WhatsApp",
+    "longDescription": "Pajangan Rute Strava dibuat dengan teknologi 3D printing untuk mengabadikan aktivitas lari atau bersepedamu dalam bentuk plakat yang rapi dan tahan lama. Kamu bisa menyesuaikan tanggal, waktu, dan nama rute sesuai data aktivitas Strava, lalu tim kami akan menyiapkan desainnya untuk dicetak. Cocok sebagai hadiah untuk pelari, pesepeda, atau kenang-kenangan setelah menyelesaikan rute favorit. Setiap produk dibuat per pesanan, diperiksa satu per satu, dan dikemas aman sebelum dikirim.",
+    "screenshots": [
+      "strava/run.svg",
+      "strava/trail-run.svg",
+      "strava/walk.svg",
+      "strava/hike.svg",
+      "strava/ride.svg",
+      "strava/swim.svg"
+    ]
+  }
+]
